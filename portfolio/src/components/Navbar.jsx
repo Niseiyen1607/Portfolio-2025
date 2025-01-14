@@ -4,7 +4,12 @@ import { motion } from 'framer-motion';
 
 const Navbar = () => {
     return (
-        <nav className="mb-20 flex items-center justify-between py-6">
+        <motion.nav 
+            className="mb-20 flex items-center justify-between py-6"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+        >
             <div className="flex flex-shrink-0 items-center">
                 <motion.img 
                     className="mx-2 w-20" 
@@ -38,10 +43,10 @@ const Navbar = () => {
                     transition={{ duration: 5, repeat: Infinity, repeatType: 'reverse' }}
                     href='#contact'
                 >
-                    Get in touch
+                    Contact
                 </motion.a>
             </div>
-        </nav>
+        </motion.nav>
     );
 }
 
