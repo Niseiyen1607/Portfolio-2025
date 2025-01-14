@@ -64,3 +64,8 @@ export const EXPERIENCES = [
       technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
     },
   ];
+
+  export const CONTACT = {
+    phoneNo: "+1 438 501 1670",
+    email: "niseiyen@gmail.com",
+  };
