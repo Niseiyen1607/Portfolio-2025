@@ -35,24 +35,28 @@ export const EXPERIENCES = [
 
   export const PROJECTS = [
     {
-      title: "Site de gestion de stage",
+      title: "projectTitle1",
       image: project1,
-      description:
-        "A web application for managing internships, with features such as user authentication, internship creation, and student evaluation.",
-      technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB", "Metodologie Agile", "Scrum" ],
+      description: "projectDescription1",
+      technologies: [
+        "HTML",
+        "CSS",
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Scrum",
+      ],
     },
     {
-      title: "protfolio 2023",
+      title: "projectTitle2",
       image: project2,
-      description:
-        "A web site for my portfolio made in 2023 for my Angular course.",
+      description: "projectDescription2",
       technologies: ["HTML", "CSS", "Angular", "Firebase"],
     },
     {
-      title: "Platformer Shooter game",
+      title: "projectTitle3",
       image: project3,
-      description:
-        "A simple platformer shooter game made with Godot Engine and GDScript.",
+      description: "projectDescription3",
       technologies: ["Godot", "GDScript"],
     },
   ];

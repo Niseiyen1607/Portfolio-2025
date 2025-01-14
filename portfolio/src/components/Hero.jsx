@@ -1,5 +1,6 @@
 import profilPic from '../assets/images/profile.jpg';
 import { motion } from 'framer-motion';
+import { useTranslation, Trans } from 'react-i18next';
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
@@ -14,6 +15,8 @@ const container = (delay) => ({
 });
 
 const Hero = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="border-b border-neutral-900 pb-4 lg:mb-35">
             <div className="flex flex-wrap">
@@ -33,7 +36,7 @@ const Hero = () => {
                             animate="visible"
                             className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
                         >
-                            Computer Science Student
+                            {t("Studies")}
                         </motion.span>
                         <motion.p
                             variants={container(1)}
@@ -41,8 +44,7 @@ const Hero = () => {
                             animate="visible"
                             className="my-2 max-w-xl py-6 font-light"
                         >
-                            I am a Computer Science student at the college of Andre-Laurendeau
-                            and I am passionate about game development and web development.
+                            {t("Summary")}
                         </motion.p>
                     </div>
                 </div>

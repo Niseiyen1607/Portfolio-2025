@@ -1,5 +1,6 @@
 import { EXPERIENCES } from "../constants/Index";
 import {motion} from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 
 const Exprience = () => {

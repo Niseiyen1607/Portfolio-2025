@@ -1,8 +1,16 @@
 import logo from '../assets/images/TM.png';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import i18n from 'i18next';
+import { useTranslation } from 'react-i18next';
+
 
 const Navbar = () => {
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng); 
+        localStorage.setItem('language', lng); 
+    };
+
     return (
         <motion.nav 
             className="mb-20 flex items-center justify-between py-6"
@@ -45,9 +53,23 @@ const Navbar = () => {
                 >
                     Contact
                 </motion.a>
+                <div className="ml-6 flex items-center gap-2">
+                    <button 
+                        className="px-2 py-1 rounded bg-gray-800 text-white hover:bg-gray-700"
+                        onClick={() => changeLanguage('en')}
+                    >
+                        EN
+                    </button>
+                    <button 
+                        className="px-2 py-1 rounded bg-gray-800 text-white hover:bg-gray-700"
+                        onClick={() => changeLanguage('fr')}
+                    >
+                        FR
+                    </button>
+                </div>
             </div>
         </motion.nav>
     );
-}
+};
 
 export default Navbar;

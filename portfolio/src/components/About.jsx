@@ -1,12 +1,15 @@
 import aboutImg from '../assets/About.png';
 import {motion} from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+
 
 const About = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="border-b border-neutral-900 pb-4">
             <h2 className="my-20 text-center text-4xl">
-                About
-                <span className="text-neutral-500"> Me</span>
+                {t('aboutTitle')}
             </h2>
             <div className="flex flex-wrap">
                 <motion.div 
@@ -25,8 +28,7 @@ const About = () => {
                 className="w-full lg:w-1/2">
                     <div className="flex justify-center lg:justify-start">
                         <p className="my-2 max-w-xl py-6">
-                            I am a Computer Science student at the college of Andre-Laurendeau
-                            and I am passionate about game development and web development.
+                            {t('aboutDescription')}
                         </p>
                     </div>
                 </motion.div>

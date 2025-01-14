@@ -1,0 +1,22 @@
+{
+  "Studies": "Étudiant en informatique",
+  "Summary": "Je suis un étudiant en informatique au collège André-Laurendeau et je suis passionné par le développement de jeux et le développement web.",
+
+  "aboutTitle": "À propos de moi",
+  "aboutDescription": "Je suis une personne passionnée et un apprenant rapide, avec un grand intérêt pour le développement de jeux, la technologie et l'apprentissage continu. J'apprécie le travail en équipe et j'apporte un esprit collaboratif et social à chaque projet. Mon adaptabilité et mon enthousiasme pour relever de nouveaux défis me permettent d'exceller aussi bien en autonomie qu'en collaboration.",
+
+  "projectsTitle": "Projets",
+  "projectTitle1": "Site de gestion de stages",
+  "projectDescription1": "Une application web pour gérer les stages, développée en équipe de 5 personnes sur une période de 15 semaines. L'application comprend des fonctionnalités telles que l'authentification des utilisateurs, la création de stages et l'évaluation des étudiants.",
+  "projectTitle2": "Portfolio 2023",
+  "projectDescription2": "Un site web pour mon portfolio réalisé en 2023 dans le cadre de mon cours Angular. Le site inclut un système de connexion et une fonctionnalité de messagerie pour améliorer l'interactivité.",
+  "projectTitle3": "Jeu de tir plate-forme",
+  "projectDescription3": "Un jeu de tir plate-forme en pixel art avec trois niveaux. Ce projet a été développé durant mon cours de veille technologique afin de comparer les moteurs de jeu Unity et Godot.",
+
+  "experienceDescription1": "Dirigé une équipe pour développer et maintenir des applications web en utilisant JavaScript, React.js et Node.js. Implémenté des APIs RESTful et intégré des bases de données MongoDB. Collaboré avec les parties prenantes pour définir les exigences et les échéances des projets.",
+  "experienceDescription2": "Conçu et développé des interfaces utilisateur pour des applications web en utilisant Next.js et React. Travaillé en étroite collaboration avec les développeurs backend pour intégrer les composants frontend avec les APIs Node.js. Implémenté des designs responsives et optimisé les performances du frontend.",
+  "experienceDescription3": "Développé et maintenu des applications web en utilisant JavaScript, React.js et Node.js. Conçu et implémenté des APIs RESTful pour la communication de données. Collaboré avec des équipes pluridisciplinaires pour livrer des produits logiciels de haute qualité dans les délais.",
+  "experienceDescription4": "Contribué au développement d'applications web en utilisant JavaScript, React.js et Node.js. Géré des bases de données et implémenté des solutions de stockage de données avec MongoDB. Travaillé étroitement avec les chefs de produit pour prioriser les fonctionnalités et les améliorations.",
+
+  "contactTitle": "Contact"
+}

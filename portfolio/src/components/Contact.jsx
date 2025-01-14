@@ -1,8 +1,11 @@
 import { CONTACT } from "../constants/Index";
 import {motion} from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 
 const Contact = () => {
+    const { t } = useTranslation();
+
     return (
         <div id="contact" className="border-b border-neutral-900 pb-20">
             <motion.h2 
@@ -10,7 +13,7 @@ const Contact = () => {
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
             className="my-10 text-center text-4xl">
-                Contact
+                {t('contactTitle')}
             </motion.h2>
             <motion.div 
             whileInView={{ opacity: 1, x: 0 }}
