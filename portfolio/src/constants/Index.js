@@ -1,7 +1,6 @@
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
-import project4 from "../assets/projects/project-4.png";
 
 export const EXPERIENCES = [
     {
@@ -36,32 +35,25 @@ export const EXPERIENCES = [
 
   export const PROJECTS = [
     {
-      title: "E-Commerce Website",
+      title: "Site de gestion de stage",
       image: project1,
       description:
-        "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-      technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+        "A web application for managing internships, with features such as user authentication, internship creation, and student evaluation.",
+      technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB", "Metodologie Agile", "Scrum" ],
     },
     {
-      title: "Task Management App",
+      title: "protfolio 2023",
       image: project2,
       description:
-        "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
+        "A web site for my portfolio made in 2023 for my Angular course.",
       technologies: ["HTML", "CSS", "Angular", "Firebase"],
     },
     {
-      title: "Portfolio Website",
+      title: "Platformer Shooter game",
       image: project3,
       description:
-        "A personal portfolio website showcasing projects, skills, and contact information.",
-      technologies: ["HTML", "CSS", "React", "Bootstrap"],
-    },
-    {
-      title: "Blogging Platform",
-      image: project4,
-      description:
-        "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-      technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+        "A simple platformer shooter game made with Godot Engine and GDScript.",
+      technologies: ["Godot", "GDScript"],
     },
   ];
 
