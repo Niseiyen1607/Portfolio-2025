@@ -49,12 +49,12 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="w-full lg:w-1/2 lg:p-8">
-                    <div className="flex justify-center relative">
+                    <div className="flex justify-center relative lg:justify-end">
                         <motion.div
                             initial={{ x:100, scale: 0, opacity: 0 }}
                             animate={{ x: 0, scale: 1, opacity: 1 }}
                             transition={{ delay: 1, duration: 1.2 }}
-                            className="absolute inset-0 flex items-center justify-center"
+                            className="absolute inset-0 flex items-center justify-center lg:justify-end"
                         >
                             <motion.div
                                 animate={{
