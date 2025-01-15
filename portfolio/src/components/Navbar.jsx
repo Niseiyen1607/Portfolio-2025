@@ -1,4 +1,3 @@
-import logo from '../assets/images/TM.png';
 import { FaLinkedin, FaGithub, FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import i18n from 'i18next';
@@ -22,15 +21,6 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
         >
-            <div className="flex flex-shrink-0 items-center">
-                <motion.img 
-                    className="mx-2 w-20" 
-                    src={logo} 
-                    alt="logo"
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 2, ease: "easeInOut" }}
-                />
-            </div>
             {/* Navbar Links */}
             <div className="m-8 flex items-center justify-center gap-4 text-2xl hidden md:flex">
                 <a href="https://www.linkedin.com/in/thiraiyan-mooneesawmy-99b8742b0" className="hover:text-blue-500 transition-colors duration-300">

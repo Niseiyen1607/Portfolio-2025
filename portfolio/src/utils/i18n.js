@@ -8,8 +8,8 @@ i18n.use(LanguageDetector)
     .use(initReactI18next)
     .init({
         debug: true,
-        lng: localStorage.getItem('language') || 'en', 
-        fallbackLng: 'en',
+        lng: localStorage.getItem('language') || 'fr', 
+        fallbackLng: 'fr',
         resources: {
             en: { translation: en },
             fr: { translation: fr }
