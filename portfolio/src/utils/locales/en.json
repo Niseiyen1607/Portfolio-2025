@@ -11,9 +11,12 @@
     "projectTitle1": "Internship Management Site",
     "projectDescription1": "A web application for managing internships, developed by a team of 5 over 15 weeks. The application includes features like user authentication, internship creation, and student evaluation.",
     "projectTitle2": "Portfolio 2023",
-    "projectDescription2": "A portfolio website created for my Angular course in 2023. The website includes a login system and a messaging feature to enhance interactivity.",
+    "projectDescription2": "A portfolio website created for my Angular course in 2023. The website includes a login system, a messaging feature, and Cloud Functions to handle server-side logic and notifications.",
     "projectTitle3": "Platformer Shooter Game",
-    "projectDescription3": "A pixel-art platformer shooter game with three levels. This project was developed during my technology watch course to compare the Unity and Godot game engines.",
+    "projectDescription3": "A pixel-art platformer shooter game with three levels. This project was developed during my technology watch course to explore and compare different technologies, including the Unity and Godot game engines, to understand how to select the most suitable technology based on requirements.",
+    "projectTitle4": "Class Management Mobile App",
+    "projectDescription4": "A mobile application for managing classes and students, including features like absence tracking, a calendar, notifications, and an authentication system.",
+
 
     "experienceDescription1": "Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.",
     "experienceDescription2": "Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.",

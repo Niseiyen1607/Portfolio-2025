@@ -1,6 +1,7 @@
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
+import project4 from "../assets/projects/project-4.png";
 
 export const EXPERIENCES = [
     {
@@ -8,7 +9,7 @@ export const EXPERIENCES = [
       role: "Senior Full Stack Developer",
       company: "Google Inc.",
       description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-      technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+      technologies: ["Javascript", "React.js", "Next.js", "postgresql"],
     },
     {
       year: "2022 - 2023",
@@ -43,7 +44,7 @@ export const EXPERIENCES = [
         "CSS",
         "React",
         "Node.js",
-        "MongoDB",
+        "postgresql",
         "Scrum",
       ],
     },
@@ -58,6 +59,12 @@ export const EXPERIENCES = [
       image: project3,
       description: "projectDescription3",
       technologies: ["Godot", "GDScript"],
+    },
+    {
+      title: "projectTitle4",
+      image: project4,
+      description: "projectDescription4",
+      technologies: ["Flutter", "Dart", "Firebase"],
     },
   ];
 
