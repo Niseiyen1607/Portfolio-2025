@@ -1,9 +1,19 @@
+import { useState } from "react";
 import { PROJECTS } from "../constants/Index";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {
     const { t } = useTranslation();
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const openModal = (image) => {
+        setSelectedImage(image);
+    };
+
+    const closeModal = () => {
+        setSelectedImage(null);
+    };
 
     return (
         <div className="border-b border-neutral-900 pb-4">
@@ -24,13 +34,19 @@ const Projects = () => {
                             transition={{ duration: 1 }}
                             className="w-full lg:w-1/4"
                         >
-                            <img
-                                src={project.image}
-                                width={350}
-                                height={350}
-                                alt={t(project.title)}
-                                className="mb-6 rounded"
-                            />
+                            <div className="relative">
+                                <img
+                                    src={project.image}
+                                    width={250}
+                                    height={250}
+                                    alt={t(project.title)}
+                                    className="mb-6 rounded cursor-pointer object-cover w-64 h-64"
+                                    onClick={() => openModal(project.image)}
+                                />
+                                <span className="absolute top-2 left-2 bg-black bg-opacity-50 text-white text-xs px-2 py-1 rounded">
+                                    {t("clickToEnlarge")}
+                                </span>
+                            </div>
                         </motion.div>
                         <motion.div
                             whileInView={{ opacity: 1, x: 0 }}
@@ -52,6 +68,18 @@ const Projects = () => {
                     </div>
                 ))}
             </div>
+            {selectedImage && (
+                <motion.div
+                    className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 p-4"
+                    onClick={closeModal}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.8 }}
+                    transition={{ duration: 0.3 }}
+                >
+                    <img src={selectedImage} alt="Enlarged project" className="max-w-full max-h-full object-contain" />
+                </motion.div>
+            )}
         </div>
     );
 };
