@@ -1,6 +1,6 @@
 import profilPic from '../assets/images/profile.jpg';
 import { motion } from 'framer-motion';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },

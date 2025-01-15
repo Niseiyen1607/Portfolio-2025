@@ -5,6 +5,8 @@
   "aboutTitle": "À propos de moi",
   "aboutDescription": "Je suis une personne passionnée et un apprenant rapide, avec un grand intérêt pour le développement de jeux, la technologie et l'apprentissage continu. J'apprécie le travail en équipe et j'apporte un esprit collaboratif et social à chaque projet. Mon adaptabilité et mon enthousiasme pour relever de nouveaux défis me permettent d'exceller aussi bien en autonomie qu'en collaboration.",
 
+  "technologiesTitle": "Compétences & Technologies",
+
   "projectsTitle": "Projets",
   "projectTitle1": "Site de gestion de stages",
   "projectDescription1": "Une application web pour gérer les stages, développée en équipe de 5 personnes sur une période de 15 semaines. L'application comprend des fonctionnalités telles que l'authentification des utilisateurs, la création de stages et l'évaluation des étudiants.",
