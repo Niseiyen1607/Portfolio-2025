@@ -1,5 +1,7 @@
 # Portfolio-2025
 
+## https://niseiyen.github.io/Portfolio-2025/
+
 ## Description
 Bienvenue sur mon portfolio! Ce projet met en avant mes compétences et mes réalisations dans les domaines de l'infromatique. Conçu comme une vitrine dynamique et interactive, ce portfolio est à la fois un outil de présentation et un projet d’apprentissage continu.
 
@@ -15,28 +17,6 @@ Bienvenue sur mon portfolio! Ce projet met en avant mes compétences et mes réa
 - **Frontend** : HTML5, CSS, JavaScript
 - **Autres outils** : Tailwind, Framer Motion
 
-## Installation et utilisation
-Pour visualiser ou modifier ce projet en local, suivez ces étapes :
-
-1. Clonez ce dépôt :
-   ```bash
-   git clone https://github.com/votre-utilisateur/Portfolio-2025.git
-   ```
-2. Accédez au répertoire du projet :
-   ```bash
-   cd Portfolio-2025
-   ```
-3. Lancez un serveur local :
-   - Avec Python (par exemple) :
-     ```bash
-     python -m http.server
-     ```
-   - Ou utilisez un outil comme [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
-
-4. Ouvrez votre navigateur et accédez à :
-   ```
-   http://localhost:8000
-   ```
 ## Capture décran
 ![Preview](portfolio/src/assets/preview.png)
 
