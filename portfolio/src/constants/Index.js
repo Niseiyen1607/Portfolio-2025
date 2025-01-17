@@ -2,6 +2,7 @@ import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
+import project5 from "../assets/projects/project-5.png";
 
 export const EXPERIENCES = [
     {
@@ -66,6 +67,12 @@ export const EXPERIENCES = [
       description: "projectDescription4",
       technologies: ["Flutter", "Dart", "Firebase"],
     },
+    {
+      title: "projectTitle5",
+      image: project5,
+      description: "projectDescription5",
+      technologies: ["React", "Tailwind", "Javascript", "HTML"],
+    }
   ];
 
   export const CONTACT = {

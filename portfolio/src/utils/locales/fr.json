@@ -16,7 +16,8 @@
   "projectDescription3": "Un jeu de tir plate-forme en pixel art avec trois niveaux. Ce projet a été développé durant mon cours de veille technologique afin d'explorer et de comparer différentes technologies, notamment les moteurs de jeu Unity et Godot, pour comprendre comment choisir la technologie la plus appropriée selon les besoins.",
   "projectTitle4": "Application mobile de gestion de classe",
   "projectDescription4": "Une application mobile pour la gestion des classes et des élèves, comprenant des fonctionnalités telles que le suivi des absences, un calendrier, des notifications et un système d'authentification.",
-
+  "projectTitle5": "Application de gestion de budget",
+  "projectDescription5": "Une application de gestion de budget simple et moderne qui permet de suivre les budgets, les dépenses et de modifier ou supprimer des dépenses.",
 
   "experienceDescription1": "Dirigé une équipe pour développer et maintenir des applications web en utilisant JavaScript, React.js et Node.js. Implémenté des APIs RESTful et intégré des bases de données MongoDB. Collaboré avec les parties prenantes pour définir les exigences et les échéances des projets.",
   "experienceDescription2": "Conçu et développé des interfaces utilisateur pour des applications web en utilisant Next.js et React. Travaillé en étroite collaboration avec les développeurs backend pour intégrer les composants frontend avec les APIs Node.js. Implémenté des designs responsives et optimisé les performances du frontend.",
