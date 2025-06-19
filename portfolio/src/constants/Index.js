@@ -3,6 +3,7 @@ import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/project-5.png";
+import project6 from "../assets/projects/project-6.png";
 
 export const EXPERIENCES = [
     {
@@ -72,6 +73,12 @@ export const EXPERIENCES = [
       image: project5,
       description: "projectDescription5",
       technologies: ["React", "Tailwind", "Javascript", "HTML"],
+    },
+    {
+      title: "projectTitle6",
+      image: project6,
+      description: "projectDescription6",
+      technologies: ["React", "Microsoft Azure", "Javascript", "HTML", "CSS"],
     }
   ];
 

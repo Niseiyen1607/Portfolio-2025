@@ -18,6 +18,9 @@
     "projectDescription4": "A mobile application for managing classes and students, including features like absence tracking, a calendar, notifications, and an authentication system.",
     "projectTitle5": "Budget Management App",
     "projectDescription5": "A simple and modern budget management web app that allows you to track budgets, expenses, and modify or delete expenses.",
+    "projectTitle6": "Weather Station Dashboard",
+    "projectDescription6": "A dashboard for managing weather station equipment and components, allowing users to visualize data from a weather station. The project includes a Microsoft Azure database for data storage and retrieval.",
+
 
     "experienceDescription1": "Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.",
     "experienceDescription2": "Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.",
