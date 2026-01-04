@@ -7,7 +7,7 @@
 
 ## 📌 Description
 
-Bienvenue sur mon portfolio! Ce projet met en avant mes compétences et mes réalisations dans les domaines de l'infromatique. Conçu comme une vitrine dynamique et interactive, ce portfolio est à la fois un outil de présentation et un projet d’apprentissage continu.
+Bienvenue sur mon portfolio! Ce projet met en avant mes compétences et mes réalisations dans les domaines de l'infromatique. Conçu comme une vitrine interactive, ce portfolio est à la fois un outil de présentation et un projet d’apprentissage.
 
 ---
 

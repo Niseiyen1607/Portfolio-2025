@@ -1,5 +1,4 @@
 import project1 from "../assets/projects/project-1.png";
-import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/project-5.png";
@@ -51,16 +50,10 @@ export const EXPERIENCES = [
       ],
     },
     {
-      title: "projectTitle2",
-      image: project2,
-      description: "projectDescription2",
-      technologies: ["HTML", "CSS", "Angular", "Firebase"],
-    },
-    {
       title: "projectTitle3",
       image: project3,
       description: "projectDescription3",
-      technologies: ["Godot", "GDScript"],
+      technologies: ["Unity", "CSharp", "Blender", "Photoshop"],
     },
     {
       title: "projectTitle4",
