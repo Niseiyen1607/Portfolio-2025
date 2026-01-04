@@ -1,6 +1,6 @@
 {
     "Studies": "Computer Science Student",
-    "Summary": "I am a Computer Science student at the college of Andre-Laurendeau, passionate about game development and web development. My goal is to continually improve my skills and expand my knowledge in technology, embracing new challenges and staying updated with the latest innovations.",
+    "Summary": "I am a Computer Science student at the university École de technologie supérieure (ETS), passionate about game development and web development. My goal is to continually improve my skills and expand my knowledge in technology, embracing new challenges and staying updated with the latest innovations.",
     
     "aboutTitle": "About me",
     "aboutDescription": "I am a passionate and fast learner with a keen interest in game development, technology, and continuous learning. I thrive in team environments, bringing a social and collaborative spirit to every project. My ability to quickly adapt and my enthusiasm for tackling new challenges allow me to excel both independently and as part of a group.",
@@ -8,15 +8,15 @@
     "technologiesTitle": "Skills & Technologies",
 
     "projectsTitle": "Projects",
-    "projectTitle1": "Internship Management Site",
+    "projectTitle1": "Internship Management Site (2025)",
     "projectDescription1": "A web application for managing internships, developed by a team of 5 over 15 weeks. The application includes features like user authentication, internship creation, and student evaluation.",
-    "projectTitle3": "Multiplayer shooter game",
+    "projectTitle3": "Multiplayer shooter game (2025)",
     "projectDescription3": "A multiplayer shooter with the ability to create rooms for up to 8 players, featuring unique upgrades such as dashes, double jumps, and various weapons available during matches, making the gameplay as chaotic as it is fun.",
-    "projectTitle4": "Class Management Mobile App",
+    "projectTitle4": "Class Management Mobile App (2024)",
     "projectDescription4": "A mobile application for managing classes and students, including features like absence tracking, a calendar, notifications, and an authentication system.",
-    "projectTitle5": "Budget Management App",
+    "projectTitle5": "Budget Management App (2025)",
     "projectDescription5": "A simple and modern budget management web app that allows you to track budgets, expenses, and modify or delete expenses.",
-    "projectTitle6": "Weather Station Dashboard",
+    "projectTitle6": "Weather Station Dashboard (2025)",
     "projectDescription6": "A dashboard for managing weather station equipment and components, allowing users to visualize data from a weather station. The project includes a Microsoft Azure database for data storage and retrieval.",
 
 
