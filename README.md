@@ -36,7 +36,6 @@ Bienvenue sur mon portfolio! Ce projet met en avant mes compétences et mes réa
 
 ![Preview](portfolio/src/assets/PreviewVideo.gif)
 
-
 ---
 
 ## 👨‍💻 Auteur
