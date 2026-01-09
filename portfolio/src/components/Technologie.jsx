@@ -1,22 +1,15 @@
-import { RiReactjsLine } from "react-icons/ri";
-import { FaNodeJs } from "react-icons/fa";
-import { FaAngular } from "react-icons/fa";
-import { FaJava } from "react-icons/fa";
+import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
+import { FaNodeJs, FaAngular, FaJava, FaPython, FaUnity } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiSpring } from "react-icons/si";
+import { SiSpring, SiPostgresql, SiOracle } from "react-icons/si";
 import { DiGit } from "react-icons/di";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { FaPython } from "react-icons/fa";
-import { FaUnity } from "react-icons/fa"; // Import Unity icon
-
 import { useTranslation } from 'react-i18next';
-
 import { motion } from "framer-motion";
 
-const iconVariants = (duration) => ({
-    inital: { y: -10 },
+const floatAnimation = (duration) => ({
+    initial: { y: 0 },
     animate: {
-        y: [7, -7],
+        y: [10, -10],
         transition: {
             duration: duration,
             ease: "easeInOut",
@@ -26,116 +19,63 @@ const iconVariants = (duration) => ({
     },
 });
 
-const Technologie = () => {
+const Technologies = () => {
     const { t } = useTranslation();
 
+    const techs = [
+        { icon: <RiReactjsLine className="text-6xl" />, name: "React", color: "text-cyan-400", shadow: "shadow-cyan-500/50" },
+        { icon: <FaNodeJs className="text-6xl" />, name: "Node.js", color: "text-green-500", shadow: "shadow-green-500/50" },
+        { icon: <FaAngular className="text-6xl" />, name: "Angular", color: "text-red-500", shadow: "shadow-red-500/50" },
+        { icon: <FaJava className="text-6xl" />, name: "Java", color: "text-blue-500", shadow: "shadow-blue-500/50" },
+        { icon: <IoLogoJavascript className="text-6xl" />, name: "JavaScript", color: "text-yellow-500", shadow: "shadow-yellow-500/50" },
+        { icon: <SiSpring className="text-6xl" />, name: "Spring", color: "text-green-400", shadow: "shadow-green-400/50" },
+        { icon: <DiGit className="text-6xl" />, name: "Git", color: "text-orange-500", shadow: "shadow-orange-500/50" },
+        { icon: <RiTailwindCssFill className="text-6xl" />, name: "Tailwind", color: "text-cyan-400", shadow: "shadow-cyan-400/50" },
+        { icon: <FaPython className="text-6xl" />, name: "Python", color: "text-yellow-500", shadow: "shadow-yellow-500/50" },
+        { icon: <FaUnity className="text-6xl" />, name: "Unity", color: "text-white", shadow: "shadow-white/50" },
+        { icon: <SiPostgresql className="text-6xl" />, name: "PostgreSQL", color: "text-sky-500", shadow: "shadow-sky-500/50" },
+        { icon: <SiOracle className="text-6xl" />, name: "Oracle", color: "text-red-500", shadow: "shadow-red-500/50" },
+    ];
+
     return (
-        <div className="border-b border-neutral-800 pb-24">
-            <motion.h2
+        <div className="border-b border-neutral-800 pb-24 relative overflow-hidden">
+            
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-900/20 rounded-full blur-[100px] -z-10"></div>
+
+            <motion.h6
                 whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -100 }}
-                transition={{ duration: 1.5 }}
+                initial={{ opacity: 0, x: 100 }}
+                transition={{ duration: 1 }}
                 className="my-20 text-center text-4xl">
                 {t('technologiesTitle')}
-            </motion.h2>
-            <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -100 }}
-                transition={{ duration: 1.5 }}
-                className="flex flex-wrap items-center justify-center gap-8">
-                <motion.div
-                    variants={iconVariants(2.5)}
-                    initial="inital"
-                    animate="animate"
-                    whileHover={{ scale: 1.2 }}
-                    className="rounded-2xl border-4 p-4 border-gradient-to-r from-pink-300 via-slate-500
-                        to-purple-500">
-                    <RiReactjsLine className="text-7xl text-cyan-400" />
-                </motion.div>
-                <motion.div
-                    variants={iconVariants(5)}
-                    initial="inital"
-                    animate="animate"
-                    whileHover={{ scale: 1.2 }}
-                    className="rounded-2xl border-4 border-gradient-to-r from-pink-300 via-slate-500
-                        to-purple-500 p-4">
-                    <FaNodeJs className="text-7xl text-green-500" />
-                </motion.div>
-                <motion.div
-                    variants={iconVariants(2.5)}
-                    initial="inital"
-                    animate="animate"
-                    whileHover={{ scale: 1.2 }}
-                    className="rounded-2xl border-4 border-gradient-to-r from-pink-300 via-slate-500
-                        to-purple-500-800 p-4">
-                    <FaAngular className="text-7xl text-red-500" />
-                </motion.div>
-                <motion.div
-                    variants={iconVariants(3)}
-                    initial="inital"
-                    animate="animate"
-                    whileHover={{ scale: 1.2 }}
-                    className="rounded-2xl border-4 border-gradient-to-r from-pink-300 via-slate-500
-                        to-purple-500 p-4">
-                    <FaJava className="text-7xl text-blue-500" />
-                </motion.div>
-                <motion.div
-                    variants={iconVariants(3.5)}
-                    initial="inital"
-                    animate="animate"
-                    whileHover={{ scale: 1.2 }}
-                    className="rounded-2xl border-4 border-gradient-to-r from-pink-300 via-slate-500
-                        to-purple-500 p-4">
-                    <IoLogoJavascript className="text-7xl text-yellow-500" />
-                </motion.div>
-                <motion.div
-                    variants={iconVariants(3)}
-                    initial="inital"
-                    animate="animate"
-                    whileHover={{ scale: 1.2 }}
-                    className="rounded-2xl border-4 border-gradient-to-r from-pink-300 via-slate-500
-                        to-purple-500 p-4">
-                    <SiSpring className="text-7xl text-green-400" />
-                </motion.div>
-                <motion.div
-                    variants={iconVariants(6)}
-                    initial="inital"
-                    animate="animate"
-                    whileHover={{ scale: 1.2 }}
-                    className="rounded-2xl border-4 border-gradient-to-r from-pink-300 via-slate-500
-                        to-purple-500 p-4">
-                    <DiGit className="text-7xl text-orange-500" />
-                </motion.div>
-                <motion.div
-                    variants={iconVariants(3.5)}
-                    initial="inital"
-                    animate="animate"
-                    whileHover={{ scale: 1.2 }}
-                    className="rounded-2xl border-4 border-gradient-to-r from-pink-300 via-slate-500
-                        to-purple-500 p-4">
-                    <RiTailwindCssFill className="text-7xl text-cyan-400" />
-                </motion.div>
-                <motion.div
-                    variants={iconVariants(4)}
-                    initial="inital"
-                    animate="animate"
-                    whileHover={{ scale: 1.2 }}
-                    className="rounded-2xl border-4 border-gradient-to-r from-pink-300 via-slate-500
-                        to-purple-500 p-4">
-                    <FaPython className="text-7xl text-yellow-500" />
-                </motion.div>
-                <motion.div
-                    variants={iconVariants(4)}
-                    initial="inital"
-                    animate="animate"
-                    whileHover={{ scale: 1.2 }}
-                    className="rounded-2xl border-4 border-gradient-to-r from-pink-300 via-slate-500
-                        to-purple-500 p-4">
-                    <FaUnity className="text-7xl text-white" /> 
-                </motion.div>
-            </motion.div>
+            </motion.h6>
+            
+            <div className="flex flex-wrap items-center justify-center gap-12 lg:gap-16 px-4">
+                {techs.map((tech, index) => (
+                    <motion.div
+                        key={index}
+                        variants={floatAnimation(2.5 + Math.random() * 3.5)} 
+                        initial="initial"
+                        animate="animate"
+                        className="relative group"
+                    >
+                        <div className={`p-4 rounded-full bg-neutral-900/30 backdrop-blur-sm border border-neutral-800 
+                                        transition-all duration-300 ease-in-out
+                                        group-hover:scale-110 group-hover:border-neutral-600 
+                                        group-hover:shadow-[0_0_30px_rgba(0,0,0,0.5)] ${tech.color} group-hover:${tech.shadow}`}>
+                            {tech.icon}
+                        </div>
+
+                        <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span className="text-sm font-medium text-neutral-300 bg-neutral-900/80 px-2 py-1 rounded whitespace-nowrap border border-neutral-700">
+                                {tech.name}
+                            </span>
+                        </div>
+                    </motion.div>
+                ))}
+            </div>
         </div>
     );
 };
 
-export default Technologie;
+export default Technologies;
