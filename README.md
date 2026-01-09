@@ -34,7 +34,8 @@ Bienvenue sur mon portfolio! Ce projet met en avant mes compétences et mes réa
 
 ## 🖼️ Capture d’écran
 
-![Preview](portfolio/src/assets/preview.png)
+![Preview](portfolio/src/assets/PreviewVideo.gif)
+
 
 ---
 
