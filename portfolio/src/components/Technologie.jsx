@@ -42,13 +42,23 @@ const Technologies = () => {
             
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-900/20 rounded-full blur-[100px] -z-10"></div>
 
-            <motion.h6
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: 100 }}
-                transition={{ duration: 1 }}
-                className="my-20 text-center text-4xl">
-                {t('technologiesTitle')}
-            </motion.h6>
+            <div className="flex flex-col items-center justify-center my-20">
+                <motion.h2 
+                    whileInView={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.8 }}
+                    className="text-center text-4xl lg:text-5xl font-thin tracking-tight"
+                >
+                    <span className="text-neutral-500 mr-4">02.</span>
+                    {t("technologiesTitle")}
+                </motion.h2>
+                <motion.div 
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100px" }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    className="h-[1px] bg-gradient-to-r from-transparent via-purple-500 to-transparent mt-4"
+                />
+            </div>
             
             <div className="flex flex-wrap items-center justify-center gap-12 lg:gap-16 px-4">
                 {techs.map((tech, index) => (
