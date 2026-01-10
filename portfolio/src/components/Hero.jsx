@@ -16,7 +16,6 @@ const StaggeredText = ({ text, className }) => {
     hidden: { opacity: 0, y: 20, transition: { type: "spring", damping: 12, stiffness: 100 } },
   };
   return (
-    // Added justify-center for mobile, lg:justify-start for desktop
     <motion.div 
         style={{ display: "flex", flexWrap: "wrap" }} 
         variants={container} 
@@ -42,17 +41,14 @@ const Hero = () => {
     return (
         <div className="relative border-b border-neutral-900 pb-12 pt-24 lg:pb-20 lg:pt-32 lg:mb-35 px-4 sm:px-6 lg:px-16 overflow-hidden">
             
-            {/* Background Blobs - Resized for mobile */}
             <div className="absolute top-0 right-0 -z-10 h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] lg:h-[500px] lg:w-[500px] bg-purple-900/20 rounded-full blur-[80px] lg:blur-[120px] opacity-50"></div>
             <div className="absolute bottom-0 left-0 -z-10 h-[200px] w-[200px] sm:h-[300px] sm:w-[300px] bg-cyan-900/10 rounded-full blur-[80px] lg:blur-[100px] opacity-30"></div>
 
             <div className="flex flex-col lg:flex-row items-center">
                 
-                {/* TEXT SECTION */}
                 <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start z-10 order-2 lg:order-1 mt-12 lg:mt-0">
                     <StaggeredText 
                         text="Thiraiyan Mooneesawmy" 
-                        // Adjusted text sizes for iPhone/iPad
                         className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-thin tracking-tighter text-white mb-4 sm:mb-6 text-center lg:text-left" 
                     />
 
@@ -78,19 +74,15 @@ const Hero = () => {
                     </motion.p>
                 </div>
 
-                {/* SOLAR SYSTEM PROFILE SECTION */}
                 <div className="w-full lg:w-1/2 relative flex justify-center lg:justify-end order-1 lg:order-2">
                     
-                    {/* Main Container: Controls the total size of the orbit system */}
                     <motion.div
                         initial={{ scale: 0.8, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ delay: 0.5, duration: 1 }}
-                        // Responsive Sizes: w-[280px] on mobile -> w-[450px] on desktop
                         className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] flex items-center justify-center"
                     >
                         
-                        {/* 1. OUTER RING (Red Planet) */}
                         <motion.div
                             animate={{ rotate: 360 }}
                             transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
@@ -99,7 +91,6 @@ const Hero = () => {
                             <div className="absolute top-1/2 -left-[5px] lg:-left-[6px] -translate-y-1/2 w-2 h-2 sm:w-3 sm:h-3 bg-rose-500 rounded-full shadow-[0_0_15px_#f43f5e]"></div>
                         </motion.div>
 
-                        {/* 2. MIDDLE RING (Cyan Planet) */}
                         <motion.div
                             animate={{ rotate: 360 }}
                             transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
@@ -108,8 +99,6 @@ const Hero = () => {
                             <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 sm:w-4 sm:h-4 bg-cyan-400 rounded-full shadow-[0_0_15px_#22d3ee]"></div>
                         </motion.div>
 
-                        {/* 3. INNER RING (Purple Planet) */}
-                        {/* Use responsive Insets (inset-8 on mobile, inset-12 on desktop) to prevent overlap */}
                         <motion.div
                             animate={{ rotate: -360 }}
                             transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
@@ -118,17 +107,13 @@ const Hero = () => {
                             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-2 h-2 sm:w-3 sm:h-3 bg-purple-500 rounded-full shadow-[0_0_12px_#a855f7]"></div>
                         </motion.div>
 
-                        {/* 4. DECORATIVE DOTTED ORBIT */}
-                        {/* Responsive insets: inset-16 on mobile, inset-24 on desktop */}
                         <motion.div
                             animate={{ rotate: 180 }}
                             transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
                             className="absolute inset-16 sm:inset-20 lg:inset-24 rounded-full border border-dotted border-white/10"
                         ></motion.div>
 
-                        {/* PROFILE PICTURE (The Sun) */}
                         <motion.div 
-                            // Responsive Profile Size: w-40 (160px) on mobile -> w-80 (320px) on desktop
                             className="relative z-10 w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-2 border-neutral-800/50 shadow-[0_0_60px_-15px_rgba(168,85,247,0.5)]"
                             whileHover={{ scale: 1.02, borderColor: "rgba(34,211,238,0.5)" }}
                             transition={{ duration: 0.5 }}
@@ -138,7 +123,6 @@ const Hero = () => {
                                 alt="Profile"
                                 className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-500"
                             />
-                            {/* Overlay Gradient */}
                             <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/70 via-transparent to-transparent"></div>
                         </motion.div>
                     </motion.div>
