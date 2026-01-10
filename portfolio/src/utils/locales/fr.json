@@ -1,38 +1,41 @@
 {
   "Studies": "Étudiant en informatique",
-  "Summary": "Je suis un étudiant en informatique à l'École de technologie supérieure (ETS), passionné par le développement de jeux et le développement web. Mon objectif est d'améliorer continuellement mes compétences et d'élargir mes connaissances en technologie en relevant de nouveaux défis et en me tenant informé des dernières innovations.",
+  "Summary": "Je suis un étudiant en informatique à l'École de technologie supérieure (ETS), passionné par le développement de jeux et le développement web. Mon objectif est d'améliorer continuellement mes compétences et d'élargir mes connaissances en technologie, en relevant de nouveaux défis et en me tenant informé des dernières innovations.",
 
   "aboutTitle": "À propos de moi",
-  "aboutDescription": "Je suis une personne passionnée qui apprend vite, avec un intérêt incessant pour le développement de jeux, la technologie et l'apprentissage. J'apprécie le travail en équipe et j'apporte un esprit collaboratif et social à chaque projet. Mon adaptabilité et mon enthousiasme pour reveler de nouveaux défis me permettent d'exceller aussi bien par moi même qu'en collaboration.",
+  "aboutDescription": "Je suis une personne passionnée qui apprend vite, avec un intérêt constant pour le développement de jeux, la technologie et l'apprentissage. Mon adaptabilité pour relever de nouveaux défis me permettent d'exceller aussi bien par moi-même qu'en collaboration.",
 
   "technologiesTitle": "Compétences & Technologies",
 
   "projectsTitle": "Projets",
   "projectTitle1": "Site de gestion de stages (2025)",
   "projectDescription1": "Une application web pour gérer les stages, développée en équipe de 5 personnes sur une période de 15 semaines. L'application comprend des fonctionnalités telles que l'authentification des utilisateurs, la création de stages et l'évaluation des étudiants.",
-  "projectTitle3": "Jeu multijoueur de tir (2025)",
-  "projectDescription3": "Un jeu de tir multijoueur avec la possibilité de créer des salles jusqu’à 8 joueurs, dont la particularité réside dans les améliorations comme le dash, le double saut et différentes armes disponibles durant la partie, afin de rendre les matchs aussi chaotiques qu’amusants.",
-  "projectTitle4": "Application mobile de gestion de classe (2024)",
-  "projectDescription4": "Une application mobile pour la gestion des classes et des élèves, comprenant des fonctionnalités telles que le suivi des absences, un calendrier, des notifications et un système d'authentification.",
-  "projectTitle5": "Application de gestion de budget (2025)",
-  "projectDescription5": "Une application web de gestion de budget simple et moderne qui permet de suivre les budgets, les dépenses et de modifier ou supprimer des dépenses.",
-  "projectTitle6": "Tableau de bord de station météo (2025)",
-  "projectDescription6": "Un tableau de bord pour la gestion des équipements et des composants d'une station météo, permettant aux utilisateurs de visualiser les données d'une station météo. Le projet inclut une base de données Microsoft Azure pour le stockage et la récupération des données.",
 
-  "experienceDescription1": "Dirigé une équipe pour développer et maintenir des applications web en utilisant JavaScript, React.js et Node.js. Implémenté des APIs RESTful et intégré des bases de données MongoDB. Collaboré avec les parties prenantes pour définir les exigences et les échéances des projets.",
-  "experienceDescription2": "Conçu et développé des interfaces utilisateur pour des applications web en utilisant Next.js et React. Travaillé en étroite collaboration avec les développeurs backend pour intégrer les composants frontend avec les APIs Node.js. Implémenté des designs responsives et optimisé les performances du frontend.",
-  "experienceDescription3": "Développé et maintenu des applications web en utilisant JavaScript, React.js et Node.js. Conçu et implémenté des APIs RESTful pour la communication de données. Collaboré avec des équipes pluridisciplinaires pour livrer des produits logiciels de haute qualité dans les délais.",
-  "experienceDescription4": "Contribué au développement d'applications web en utilisant JavaScript, React.js et Node.js. Géré des bases de données et implémenté des solutions de stockage de données avec MongoDB. Travaillé étroitement avec les chefs de produit pour prioriser les fonctionnalités et les améliorations.",
+  "projectTitle3": "Jeu de tir multijoueur (2025)",
+  "projectDescription3": "Un jeu de tir multijoueur avec la possibilité de créer des salles jusqu’à 8 joueurs, dont la particularité réside dans les améliorations comme le dash, le double saut et différentes armes disponibles durant la partie, afin de rendre les matchs aussi chaotiques qu’amusants.",
+
+  "projectTitle4": "Application mobile de gestion de classe (2024)",
+  "projectDescription4": "Une application mobile dédiée à la gestion des classes et des élèves, comprenant des fonctionnalités telles que le suivi des absences, un calendrier, des notifications et un système d'authentification.",
+
+  "projectTitle5": "Application de gestion de budget (2025)",
+  "projectDescription5": "Une application web de gestion de budget simple et moderne permettant de suivre les budgets et les dépenses, ainsi que de modifier ou supprimer des entrées.",
+
+  "projectTitle6": "Tableau de bord de station météo (2025)",
+  "projectDescription6": "Un tableau de bord destiné à la gestion des équipements et des composants d'une station météo, permettant aux utilisateurs de visualiser les données collectées. Le projet inclut une base de données Microsoft Azure pour le stockage et la récupération des données.",
+
+  "experienceDescription1": "Dirigé une équipe afin de développer et maintenir des applications web en utilisant JavaScript, React.js et Node.js. Implémenté des APIs RESTful et intégré des bases de données MongoDB. Collaboré avec les parties prenantes pour définir les exigences et les échéances des projets.",
+  "experienceDescription2": "Conçu et développé des interfaces utilisateur pour des applications web en utilisant Next.js et React. Travaillé en étroite collaboration avec les développeurs backend pour intégrer les composants frontend aux APIs Node.js. Implémenté des designs responsives et optimisé les performances du frontend.",
+  "experienceDescription3": "Développé et maintenu des applications web en utilisant JavaScript, React.js et Node.js. Conçu et implémenté des APIs RESTful pour la communication des données. Collaboré avec des équipes pluridisciplinaires afin de livrer des produits logiciels de haute qualité dans les délais.",
+  "experienceDescription4": "Contribué au développement d'applications web en utilisant JavaScript, React.js et Node.js. Géré des bases de données et implémenté des solutions de stockage avec MongoDB. Travaillé étroitement avec les chefs de produit pour prioriser les fonctionnalités et les améliorations.",
 
   "explore": "Explorer",
   "statusAvailable": "Statut : Disponible",
   "clickToEnlarge": "Cliquer pour agrandir",
 
   "contactTitle": "Contact",
-
   "getInTouch": "Entrer en contact",
-  "contactDesc": "Je suis actuellement à la recherche de nouvelles opportunités. Que vous ayez une question ma boîte de réception est toujours ouverte !",
-  "sayHello": "Dire Bonjour",
-  "copyEmail": "Copier l'email",
+  "contactDesc": "Je suis actuellement à la recherche de nouvelles opportunités. Que vous ayez une question ou un projet, ma boîte de réception est toujours ouverte !",
+  "sayHello": "Dire bonjour",
+  "copyEmail": "Copier l’email",
   "copied": "Copié !"
 }
