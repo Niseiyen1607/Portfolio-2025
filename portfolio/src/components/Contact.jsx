@@ -15,7 +15,7 @@ const Contact = () => {
     };
 
     return (
-        <div id="contact" className="border-b border-neutral-900 pb-20 relative overflow-hidden">
+        <div id="contact" className="scroll-mt-24 border-b border-neutral-900 pb-20 relative overflow-hidden">
             
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[300px] bg-gradient-to-t from-purple-900/20 to-transparent blur-[100px] -z-10"></div>
 
@@ -26,7 +26,7 @@ const Contact = () => {
                     transition={{ duration: 0.8 }}
                     className="text-center text-4xl lg:text-5xl font-thin tracking-tight"
                 >
-                    <span className="text-neutral-500 mr-4">03.</span>
+                    <span className="text-neutral-500 mr-4">04.</span>
                     {t('contactTitle')}
                 </motion.h2>
                 <motion.div 

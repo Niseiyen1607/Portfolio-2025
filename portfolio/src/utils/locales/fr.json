@@ -1,14 +1,23 @@
 {
-  "Studies": "Étudiant en informatique",
-  "Summary": "Je suis un étudiant en informatique à l'École de technologie supérieure (ETS), passionné par le développement de jeux et le développement web. Mon objectif est d'améliorer continuellement mes compétences et d'élargir mes connaissances en technologie, en relevant de nouveaux défis et en me tenant informé des dernières innovations.",
+  "Studies": "Étudiant en informatique à l’ETS · À la recherche d’un stage en développement",
+  "Summary": "Je conçois des applications web et logicielles dans le cadre de mes projets d’études et personnels. Je cherche un stage en développement pour contribuer à des projets concrets et approfondir mes compétences techniques au sein d’une équipe.",
 
   "aboutTitle": "À propos de moi",
-  "aboutDescription": "Je suis une personne passionnée qui apprend vite, avec un intérêt constant pour le développement de jeux, la technologie et l'apprentissage. Mon adaptabilité pour relever de nouveaux défis me permettent d'exceller aussi bien par moi-même qu'en collaboration.",
+  "aboutDescription": "Étudiant à l’École de technologie supérieure, je m’intéresse au développement web, logiciel et de jeux vidéo. J’aime apprendre de nouvelles technologies, résoudre des problèmes et collaborer pour transformer des idées en applications fonctionnelles.",
 
   "technologiesTitle": "Compétences & Technologies",
 
   "projectsTitle": "Projets",
-  "projectTitleRepoBrain": "RepoBrain",
+  "navAbout": "À propos",
+  "navTechnologies": "Technologies",
+  "navProjects": "Projets",
+  "downloadCv": "Télécharger mon CV",
+  "viewProjects": "Voir mes projets",
+  "mainNavigation": "Navigation principale",
+  "openLinkedIn": "Ouvrir mon profil LinkedIn",
+  "openGitHub": "Ouvrir mon profil GitHub",
+  "toggleNavigation": "Ouvrir ou fermer le menu de navigation",
+  "projectTitleRepoBrain": "RepoBrain (2026)",
   "projectDescriptionRepoBrain": "Une application web d'assistance au développement propulsée par l'IA, qui transforme les dépôts GitHub en bases de connaissances interactives. Elle permet de rechercher dans le code en langage naturel, de résumer les commits et d'extraire des tâches à partir de réunions audio ou vidéo.",
   "projectStatusInDevelopment": "En développement",
   "viewRepository": "Voir le dépôt",
@@ -30,12 +39,12 @@
   "experienceDescription4": "Contribué au développement d'applications web en utilisant JavaScript, React.js et Node.js. Géré des bases de données et implémenté des solutions de stockage avec MongoDB. Travaillé étroitement avec les chefs de produit pour prioriser les fonctionnalités et les améliorations.",
 
   "explore": "Explorer",
-  "statusAvailable": "Statut : Disponible",
+  "statusAvailable": "À la recherche d’un stage",
   "clickToEnlarge": "Cliquer pour agrandir",
 
   "contactTitle": "Contact",
   "getInTouch": "Entrer en contact",
-  "contactDesc": "Je suis actuellement à la recherche de nouvelles opportunités. Que vous ayez une question ou un projet, ma boîte de réception est toujours ouverte !",
+  "contactDesc": "Je recherche actuellement un stage en développement. Pour échanger au sujet d’une opportunité ou d’un projet, vous pouvez me contacter par courriel.",
   "sayHello": "Dire bonjour",
   "copyEmail": "Copier l’email",
   "copied": "Copié !"

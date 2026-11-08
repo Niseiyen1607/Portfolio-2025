@@ -1,14 +1,23 @@
 {
-  "Studies": "Computer Science Student",
-  "Summary": "I am a Computer Science student at the university École de technologie supérieure (ETS), passionate about game development and web development. My goal is to continually improve my skills and expand my knowledge in technology, embracing new challenges and staying updated with the latest innovations.",
+  "Studies": "Computer Science student at ETS · Seeking a software development internship",
+  "Summary": "I build web and software applications through academic and personal projects. I am seeking a development internship where I can contribute to real-world projects and strengthen my technical skills as part of a team.",
 
   "aboutTitle": "About me",
-  "aboutDescription": "I am a passionate and fast learner with a keen interest in game development, technology, and continuous learning. I thrive in team environments, bringing a social and collaborative spirit to every project. My ability to quickly adapt and my enthusiasm for tackling new challenges allow me to excel both independently and as part of a group.",
+  "aboutDescription": "I am a student at École de technologie supérieure interested in web, software, and game development. I enjoy learning new technologies, solving problems, and collaborating to turn ideas into working applications.",
 
   "technologiesTitle": "Skills & Technologies",
 
   "projectsTitle": "Projects",
-  "projectTitleRepoBrain": "RepoBrain",
+  "navAbout": "About",
+  "navTechnologies": "Technologies",
+  "navProjects": "Projects",
+  "downloadCv": "Download my résumé",
+  "viewProjects": "View my projects",
+  "mainNavigation": "Main navigation",
+  "openLinkedIn": "Open my LinkedIn profile",
+  "openGitHub": "Open my GitHub profile",
+  "toggleNavigation": "Open or close the navigation menu",
+  "projectTitleRepoBrain": "RepoBrain (2026)",
   "projectDescriptionRepoBrain": "An AI-powered development assistant that turns GitHub repositories into interactive, searchable knowledge bases. It supports natural-language code search, commit summaries, and task extraction from audio or video meetings.",
   "projectStatusInDevelopment": "In development",
   "viewRepository": "View repository",
@@ -27,13 +36,13 @@
   "experienceDescription4": "Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.",
 
   "explore": "Explore",
-  "statusAvailable": "Status: Available",
+  "statusAvailable": "Seeking an internship",
   "clickToEnlarge": "Click to enlarge",
 
   "contactTitle": "Contact",
 
   "getInTouch": "Get in touch",
-  "contactDesc": "I am currently looking for new opportunities. Whether you have a question my inbox is always open!",
+  "contactDesc": "I am currently seeking a software development internship. Feel free to email me about an opportunity or a project.",
   "sayHello": "Say Hello",
   "copyEmail": "Copy Email",
   "copied": "Copied!"

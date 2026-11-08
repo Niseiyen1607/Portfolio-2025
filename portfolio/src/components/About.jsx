@@ -6,7 +6,7 @@ const About = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="border-b border-neutral-900 pb-24 relative">
+        <div id="about" className="scroll-mt-24 border-b border-neutral-900 pb-24 relative">
             
             <div className="flex flex-col items-center justify-center my-20">
                 <motion.h2 

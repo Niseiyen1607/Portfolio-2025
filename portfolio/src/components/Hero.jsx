@@ -1,6 +1,8 @@
 import profilPic from '../assets/images/profile.jpg';
+import cv from '../../PrimeCV.pdf';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { FiArrowDown, FiDownload } from 'react-icons/fi';
 
 const StaggeredText = ({ text, className }) => {
   const letters = text.split("");
@@ -39,7 +41,7 @@ const Hero = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="relative border-b border-neutral-900 pb-12 pt-24 lg:pb-20 lg:pt-32 lg:mb-35 px-4 sm:px-6 lg:px-16 overflow-hidden">
+        <div id="top" className="relative scroll-mt-24 border-b border-neutral-900 pb-12 pt-24 lg:pb-20 lg:pt-32 lg:mb-35 px-4 sm:px-6 lg:px-16 overflow-hidden">
             
             <div className="absolute top-0 right-0 -z-10 h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] lg:h-[500px] lg:w-[500px] bg-purple-900/20 rounded-full blur-[80px] lg:blur-[120px] opacity-50"></div>
             <div className="absolute bottom-0 left-0 -z-10 h-[200px] w-[200px] sm:h-[300px] sm:w-[300px] bg-cyan-900/10 rounded-full blur-[80px] lg:blur-[100px] opacity-30"></div>
@@ -72,6 +74,29 @@ const Hero = () => {
                     >
                         {t("Summary")}
                     </motion.p>
+
+                    <motion.div
+                        variants={containerVariants(1.8)}
+                        initial="hidden"
+                        animate="visible"
+                        className="flex flex-wrap justify-center lg:justify-start gap-3"
+                    >
+                        <a
+                            href={cv}
+                            download="PrimeCV.pdf"
+                            className="inline-flex items-center gap-2 rounded-full border border-cyan-600/50 bg-cyan-950/50 px-5 py-3 text-sm font-medium text-cyan-100 transition-colors hover:border-cyan-400 hover:bg-cyan-900/50"
+                        >
+                            <FiDownload />
+                            {t("downloadCv")}
+                        </a>
+                        <a
+                            href="#projects"
+                            className="inline-flex items-center gap-2 rounded-full border border-neutral-700 px-5 py-3 text-sm font-medium text-neutral-200 transition-colors hover:border-purple-400/60 hover:text-white"
+                        >
+                            {t("viewProjects")}
+                            <FiArrowDown />
+                        </a>
+                    </motion.div>
                 </div>
 
                 <div className="w-full lg:w-1/2 relative flex justify-center lg:justify-end order-1 lg:order-2">

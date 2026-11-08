@@ -1,7 +1,7 @@
-import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
-import { FaNodeJs, FaAngular, FaJava, FaPython, FaUnity } from "react-icons/fa";
+import { RiReactjsLine } from "react-icons/ri";
+import { FaNodeJs, FaJava, FaPython } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiSpring, SiPostgresql, SiOracle } from "react-icons/si";
+import { SiSpring, SiPostgresql } from "react-icons/si";
 import { DiGit } from "react-icons/di";
 import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const floatAnimation = (duration) => ({
     initial: { y: 0 },
     animate: {
-        y: [10, -10],
+        y: [4, -4],
         transition: {
             duration: duration,
             ease: "easeInOut",
@@ -25,20 +25,16 @@ const Technologies = () => {
     const techs = [
         { icon: <RiReactjsLine className="text-6xl" />, name: "React", color: "text-cyan-400", shadow: "shadow-cyan-500/50" },
         { icon: <FaNodeJs className="text-6xl" />, name: "Node.js", color: "text-green-500", shadow: "shadow-green-500/50" },
-        { icon: <FaAngular className="text-6xl" />, name: "Angular", color: "text-red-500", shadow: "shadow-red-500/50" },
         { icon: <FaJava className="text-6xl" />, name: "Java", color: "text-blue-500", shadow: "shadow-blue-500/50" },
         { icon: <IoLogoJavascript className="text-6xl" />, name: "JavaScript", color: "text-yellow-500", shadow: "shadow-yellow-500/50" },
         { icon: <SiSpring className="text-6xl" />, name: "Spring", color: "text-green-400", shadow: "shadow-green-400/50" },
         { icon: <DiGit className="text-6xl" />, name: "Git", color: "text-orange-500", shadow: "shadow-orange-500/50" },
-        { icon: <RiTailwindCssFill className="text-6xl" />, name: "Tailwind", color: "text-cyan-400", shadow: "shadow-cyan-400/50" },
         { icon: <FaPython className="text-6xl" />, name: "Python", color: "text-yellow-500", shadow: "shadow-yellow-500/50" },
-        { icon: <FaUnity className="text-6xl" />, name: "Unity", color: "text-white", shadow: "shadow-white/50" },
         { icon: <SiPostgresql className="text-6xl" />, name: "PostgreSQL", color: "text-sky-500", shadow: "shadow-sky-500/50" },
-        { icon: <SiOracle className="text-6xl" />, name: "Oracle", color: "text-red-500", shadow: "shadow-red-500/50" },
     ];
 
     return (
-        <div className="border-b border-neutral-800 pb-24 relative overflow-hidden">
+        <div id="technologies" className="scroll-mt-24 border-b border-neutral-800 pb-24 relative overflow-hidden">
             
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-900/20 rounded-full blur-[100px] -z-10"></div>
 
@@ -64,7 +60,7 @@ const Technologies = () => {
                 {techs.map((tech, index) => (
                     <motion.div
                         key={index}
-                        variants={floatAnimation(2.5 + Math.random() * 3.5)} 
+                        variants={floatAnimation(4 + index * 0.25)}
                         initial="initial"
                         animate="animate"
                         className="relative group"
