@@ -2,7 +2,7 @@ import { useState } from "react";
 import { PROJECTS } from "../constants/Index";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { FiMaximize2, FiX } from "react-icons/fi"; 
+import { FiCode, FiExternalLink, FiGithub, FiMaximize2, FiX } from "react-icons/fi";
 
 const Projects = () => {
     const { t } = useTranslation();
@@ -34,11 +34,11 @@ const Projects = () => {
 
             <div className="flex flex-col gap-24 lg:gap-32 px-4 lg:px-16">
                 {PROJECTS.map((project, index) => (
-                    <div 
+                    <div
                         key={index} 
                         className={`flex flex-wrap items-center gap-8 lg:gap-16 ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
                     >
-                        
+
                         <motion.div
                             whileInView={{ opacity: 1, x: 0, scale: 1 }}
                             initial={{ opacity: 0, x: index % 2 === 1 ? 50 : -50, scale: 0.9 }}
@@ -50,24 +50,34 @@ const Projects = () => {
                                 <div className="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-cyan-500/50"></div>
                                 <div className="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-cyan-500/50"></div>
 
-                                <div 
-                                    className="relative w-full h-[250px] lg:h-[300px] rounded-xl overflow-hidden cursor-pointer"
-                                    onClick={() => setSelectedImage(project.image)}
-                                >
-                                    <img
-                                        src={project.image}
-                                        alt={t(project.title)}
-                                        className="w-full h-full object-cover object-top transform transition-transform duration-700 group-hover:scale-105"
-                                    />
-                                    
-                                    <div className="absolute inset-0 bg-neutral-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                        <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                            <span className="flex items-center gap-2 text-cyan-300 font-mono text-sm tracking-widest uppercase border border-cyan-500/30 px-4 py-2 rounded-full bg-cyan-900/20 backdrop-blur-md">
-                                                <FiMaximize2 /> {t("clickToEnlarge")}
-                                            </span>
+                                {project.image ? (
+                                    <div
+                                        className="relative w-full h-[250px] lg:h-[300px] rounded-xl overflow-hidden cursor-pointer"
+                                        onClick={() => setSelectedImage(project.image)}
+                                    >
+                                        <img
+                                            src={project.image}
+                                            alt={t(project.title)}
+                                            className="w-full h-full object-cover object-top transform transition-transform duration-700 group-hover:scale-105"
+                                        />
+
+                                        <div className="absolute inset-0 bg-neutral-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                            <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                                <span className="flex items-center gap-2 text-cyan-300 font-mono text-sm tracking-widest uppercase border border-cyan-500/30 px-4 py-2 rounded-full bg-cyan-900/20 backdrop-blur-md">
+                                                    <FiMaximize2 /> {t("clickToEnlarge")}
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                ) : (
+                                    <div className="relative w-full h-[250px] lg:h-[300px] rounded-xl overflow-hidden flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-neutral-900 via-purple-950/30 to-cyan-950/30">
+                                        <FiCode className="text-cyan-300" size={44} />
+                                        <span className="font-mono text-sm tracking-widest uppercase text-cyan-200/80">
+                                            {t(project.status)}
+                                        </span>
+                                        <div className="absolute inset-4 rounded-lg border border-dashed border-cyan-500/20 pointer-events-none" />
+                                    </div>
+                                )}
                             </div>
                         </motion.div>
 
@@ -86,6 +96,12 @@ const Projects = () => {
                                     {t(project.title)}
                                 </h3>
 
+                                {project.status && (
+                                    <span className="mb-4 px-3 py-1 text-xs font-mono text-amber-200/90 bg-amber-900/20 border border-amber-700/30 rounded-full">
+                                        {t(project.status)}
+                                    </span>
+                                )}
+
                                 <div className="relative z-10 p-6 bg-neutral-900/50 border border-white/5 backdrop-blur-sm rounded-xl shadow-lg mb-6 hover:border-purple-500/30 transition-colors duration-300">
                                     <p className="text-neutral-400 font-light leading-relaxed">
                                         {t(project.description)}
@@ -102,6 +118,19 @@ const Projects = () => {
                                         </span>
                                     ))}
                                 </div>
+
+                                {project.link && (
+                                    <a
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="inline-flex items-center gap-2 px-4 py-2 text-sm font-mono text-cyan-200 border border-cyan-700/40 rounded-lg hover:bg-cyan-900/20 hover:border-cyan-500/60 transition-colors"
+                                    >
+                                        <FiGithub />
+                                        {t("viewRepository")}
+                                        <FiExternalLink size={14} />
+                                    </a>
+                                )}
                             </div>
                         </motion.div>
                     </div>

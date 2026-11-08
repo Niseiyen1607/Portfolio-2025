@@ -36,6 +36,28 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "projectTitleRepoBrain",
+    description: "projectDescriptionRepoBrain",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "tRPC",
+      "PostgreSQL",
+      "Prisma",
+      "pgvector",
+      "Clerk",
+      "Gemini",
+      "LangChain",
+      "Octokit",
+      "AssemblyAI",
+      "Stripe",
+    ],
+    status: "projectStatusInDevelopment",
+    link: "https://github.com/Niseiyen1607/RepoBrain",
+  },
+  {
     title: "projectTitle1",
     image: project1,
     description: "projectDescription1",

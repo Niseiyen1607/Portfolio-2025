@@ -8,6 +8,10 @@
   "technologiesTitle": "Compétences & Technologies",
 
   "projectsTitle": "Projets",
+  "projectTitleRepoBrain": "RepoBrain",
+  "projectDescriptionRepoBrain": "Une application web d'assistance au développement propulsée par l'IA, qui transforme les dépôts GitHub en bases de connaissances interactives. Elle permet de rechercher dans le code en langage naturel, de résumer les commits et d'extraire des tâches à partir de réunions audio ou vidéo.",
+  "projectStatusInDevelopment": "En développement",
+  "viewRepository": "Voir le dépôt",
   "projectTitle1": "Site de gestion de stages (2025)",
   "projectDescription1": "Une application web pour gérer les stages, développée en équipe de 5 personnes sur une période de 15 semaines. L'application comprend des fonctionnalités telles que l'authentification des utilisateurs, la création de stages et l'évaluation des étudiants.",
 

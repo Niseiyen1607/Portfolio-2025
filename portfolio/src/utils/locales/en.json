@@ -8,6 +8,10 @@
   "technologiesTitle": "Skills & Technologies",
 
   "projectsTitle": "Projects",
+  "projectTitleRepoBrain": "RepoBrain",
+  "projectDescriptionRepoBrain": "An AI-powered development assistant that turns GitHub repositories into interactive, searchable knowledge bases. It supports natural-language code search, commit summaries, and task extraction from audio or video meetings.",
+  "projectStatusInDevelopment": "In development",
+  "viewRepository": "View repository",
   "projectTitle1": "Internship Management Site (2025)",
   "projectDescription1": "A web application for managing internships, developed by a team of 5 over 15 weeks. The application includes features like user authentication, internship creation, and student evaluation.",
   "projectTitle3": "Multiplayer shooter game (2025)",
