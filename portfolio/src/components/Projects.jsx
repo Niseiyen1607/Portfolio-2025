@@ -2,11 +2,20 @@ import { useState } from "react";
 import { PROJECTS } from "../constants/Index";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { FiCode, FiExternalLink, FiGithub, FiMaximize2, FiX } from "react-icons/fi";
+import {
+    FiChevronLeft,
+    FiChevronRight,
+    FiCode,
+    FiExternalLink,
+    FiGithub,
+    FiMaximize2,
+    FiX,
+} from "react-icons/fi";
 
 const Projects = () => {
     const { t } = useTranslation();
     const [selectedImage, setSelectedImage] = useState(null);
+    const [activeImageIndex, setActiveImageIndex] = useState(0);
 
     return (
         <div id="projects" className="scroll-mt-24 border-b border-neutral-900 pb-24 relative overflow-hidden">
@@ -50,7 +59,67 @@ const Projects = () => {
                                 <div className="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-cyan-500/50"></div>
                                 <div className="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-cyan-500/50"></div>
 
-                                {project.image ? (
+                                {project.images?.length ? (
+                                    <div>
+                                        <div className="relative w-full h-[250px] lg:h-[300px] rounded-xl overflow-hidden bg-neutral-950">
+                                            <button
+                                                type="button"
+                                                className="absolute inset-0 w-full h-full cursor-zoom-in"
+                                                onClick={() => setSelectedImage(project.images[activeImageIndex])}
+                                                aria-label={t("clickToEnlarge")}
+                                            >
+                                                <img
+                                                    src={project.images[activeImageIndex]}
+                                                    alt={`${t(project.title)} — ${activeImageIndex + 1}`}
+                                                    className="w-full h-full object-contain"
+                                                />
+                                                <span className="absolute inset-0 bg-neutral-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                                    <span className="flex items-center gap-2 text-cyan-300 font-mono text-sm tracking-widest uppercase border border-cyan-500/30 px-4 py-2 rounded-full bg-cyan-900/20 backdrop-blur-md">
+                                                        <FiMaximize2 /> {t("clickToEnlarge")}
+                                                    </span>
+                                                </span>
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                onClick={() => setActiveImageIndex((activeImageIndex - 1 + project.images.length) % project.images.length)}
+                                                aria-label={t("previousImage")}
+                                                className="absolute left-3 top-1/2 -translate-y-1/2 p-2 rounded-full text-white bg-neutral-950/70 border border-white/20 hover:bg-cyan-900/80 transition-colors"
+                                            >
+                                                <FiChevronLeft size={22} />
+                                            </button>
+                                            <button
+                                                type="button"
+                                                onClick={() => setActiveImageIndex((activeImageIndex + 1) % project.images.length)}
+                                                aria-label={t("nextImage")}
+                                                className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-full text-white bg-neutral-950/70 border border-white/20 hover:bg-cyan-900/80 transition-colors"
+                                            >
+                                                <FiChevronRight size={22} />
+                                            </button>
+
+                                            <span className="absolute bottom-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-neutral-950/75 text-xs font-mono text-white">
+                                                {activeImageIndex + 1} / {project.images.length}
+                                            </span>
+                                        </div>
+
+                                        <div className="flex justify-center gap-2 pt-3" aria-label={t("projectImages")}>
+                                            {project.images.map((image, imageIndex) => (
+                                                <button
+                                                    key={image}
+                                                    type="button"
+                                                    onClick={() => setActiveImageIndex(imageIndex)}
+                                                    aria-label={`${t("projectImage")} ${imageIndex + 1}`}
+                                                    aria-pressed={activeImageIndex === imageIndex}
+                                                    className={`h-2 rounded-full transition-all ${
+                                                        activeImageIndex === imageIndex
+                                                            ? "w-6 bg-cyan-300"
+                                                            : "w-2 bg-neutral-600 hover:bg-neutral-400"
+                                                    }`}
+                                                />
+                                            ))}
+                                        </div>
+                                    </div>
+                                ) : project.image ? (
                                     <div
                                         className="relative w-full h-[250px] lg:h-[300px] rounded-xl overflow-hidden cursor-pointer"
                                         onClick={() => setSelectedImage(project.image)}

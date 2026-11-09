@@ -2,6 +2,13 @@ import project1 from "../assets/projects/project-1.png";
 import project3 from "../assets/projects/project-3.png";
 import project5 from "../assets/projects/project-5.png";
 import project6 from "../assets/projects/project-6.png";
+import repoBrainAiUsage from "../assets/images/PageAiUsage.png";
+import repoBrainAddProject from "../assets/images/RepoBrainAddProjetPage.png";
+import repoBrainCredit from "../assets/images/RepoBrainCreditPage.png";
+import repoBrainQA from "../assets/images/RepoBrainQAPage.png";
+import repoBrainSignIn from "../assets/images/RepoBrainSignIn.png";
+import repoBrainSignUp from "../assets/images/RepoBrainSignUp.png";
+import repoBrainDashboard from "../assets/images/TableauBord.png";
 
 export const EXPERIENCES = [
   {
@@ -37,6 +44,15 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "projectTitleRepoBrain",
+    images: [
+      repoBrainDashboard,
+      repoBrainQA,
+      repoBrainAddProject,
+      repoBrainAiUsage,
+      repoBrainSignIn,
+      repoBrainSignUp,
+      repoBrainCredit,
+    ],
     description: "projectDescriptionRepoBrain",
     technologies: ["Next.js", "TypeScript", "PostgreSQL", "Gemini", "AssemblyAI", "Stripe"],
     status: "projectStatusInDevelopment",
